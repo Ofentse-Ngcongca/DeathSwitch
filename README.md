@@ -1,71 +1,87 @@
-# DeathSwitch 💀🔐
+# DeathSwitch 🛡️
 
-> 3rd Place — Standard Bank & BBD Hackathon 2025
+> *What if your bank could protect your family before the paperwork caught up?*
 
-An automated estate and beneficiary banking system designed to eliminate
-the months-long delay between a person's death and their beneficiaries
-accessing funds — replacing it with a verified, fraud-protected release
-within hours.
-
-## The Problem
-
-When someone dies, their beneficiaries typically wait months before
-accessing funds. The process depends on official death certificates,
-legal paperwork, and manual bank processes — all while families are
-grieving and financially vulnerable.
-
-DeathSwitch asks: what if the bank could act faster, smarter, and safer?
+**3rd Place — Standard Bank: Beat the Banker & BBD Hackathon 2026**
 
 ---
 
-## The Solution
+## The Idea
 
-A death probability engine that monitors signals and triggers a
-structured, fraud-protected fund release process — without waiting
-for official documentation.
+In South Africa, families wait months to access a deceased person's 
+bank account. DeathSwitch flips that. It monitors real signals, 
+verifies death probability, and releases funds to verified 
+beneficiaries — in hours, not months.
 
-**Core Components:**
-
-- 🏥 **Death Signal Detection** — Hospital discharge codes, BI-1663
-  form submissions, and next-of-kin notifications trigger the engine
-- 📡 **Liveness Verification** — Network presence signals and liveness
-  pings confirm inactivity before any action is taken
-- 👨‍👩‍👧 **Next-of-Kin Portal** — Secure portal for beneficiaries to
-  submit claims and supporting documentation
-- ⚡ **Emergency Fund Release** — Verified beneficiaries receive access
-  to emergency funds within hours of confirmed death
-- 🛡️ **Fraud Prevention Layer** — Multi-signal verification, anomaly
-  detection, and staged release controls prevent exploitation
+Built in 24 hours. Demoed to Standard Bank and BBD judges.
 
 ---
 
-## Impact
+## What We Built
 
-Traditional process: months  
-DeathSwitch: hours
+A fully interactive prototype with two views:
 
-Designed for South African families who cannot afford to wait.
+**Account Holder View**
+- Dashboard showing DeathSwitch status and liveness ping
+- Add and manage beneficiaries with percentage allocations
+- Biometric identity verification flow (ID → Face scan → Fingerprint)
+
+**Beneficiary View**
+- Real-time death probability engine (0% → 100%)
+- Five-signal release system:
+
+| Signal | Weight |
+|--------|--------|
+| Hospital discharge code | 40/40 |
+| BI-1663 portal | 30/30 |
+| Next of kin report | 15/15 |
+| Liveness ping | 10/10 |
+| Network presence | 5/5 |
+
+- Verified beneficiary allocation view
+- Emergency fund release triggered at 70% probability
+- Full distribution at 85%
 
 ---
 
-## Built At
+## Fraud Prevention
 
-**Standard Bank & BBD Hackathon — 2025**  
-Team placement: 🥉 3rd Place
+- Biometric verification required to add any beneficiary
+- Staged release — emergency funds first, full distribution later
+- Multi-signal consensus before any action is taken
+- All beneficiaries verified independently before release
+
+---
+
+## Screenshots
+
+> *Account holder dashboard, beneficiary management,*
+> *identity verification flow, and beneficiary signal view*
+
+<!-- Add screenshots here -->
+<img width="1023" height="752" alt="Screenshot 2026-06-30 000528" src="https://github.com/user-attachments/assets/a56d8754-d6a9-47a2-a984-6e7d7f69fcb8" />
+<img width="394" height="508" alt="Screenshot 2026-06-30 000434" src="https://github.com/user-attachments/assets/5fbcaa91-4922-4010-ad23-8ada21e058f7" />
+<img width="405" height="826" alt="Screenshot 2026-06-30 000409" src="https://github.com/user-attachments/assets/17d81dce-1de2-40b0-8cd0-100a0f3dffeb" />
+<img width="472" height="819" alt="Screenshot 2026-06-30 000329" src="https://github.com/user-attachments/assets/95d6a54b-f0d4-4062-ad6b-7c6f4ab9335f" />
+
+---
+
+## Stack
+
+HTML · CSS · JavaScript  
+Prototype only — no live banking API connections
 
 ---
 
 ## Status
 
-> Concept stage — developed during a 24-hour hackathon.  
-> Saved for future development and competition.
+> Concept and prototype stage.  
+> Developed during a 24-hour hackathon.  
+> Earmarked for future development.
 
 ---
 
-## Tech Concepts Involved
+## Built By
 
-- Death probability modelling
-- Real-time signal processing
-- Fraud detection and anomaly detection
-- Secure beneficiary verification
-- Financial services API integration
+Ofentse Ngcongca & team  
+Standard Bank & BBD Hackathon — 2025 · 🥉 3rd Place
